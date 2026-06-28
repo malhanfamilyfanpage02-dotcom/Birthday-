@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 Happy Birthday Sonu 🎉</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Canvas -->
+    <canvas id="starCanvas" class="full-screen-canvas"></canvas>
+    <canvas id="particleCanvas" class="full-screen-canvas"></canvas>
+    <canvas id="confettiCanvas" class="full-screen-canvas"></canvas>
+
+    <!-- Main Container -->
+    <div class="scene-container">
+        
+        <!-- Scene 1: Background (handled by canvas) -->
+        <div class="background-layer"></div>
+
+        <!-- Scene 2: Envelope -->
+        <div class="scene envelope-scene" id="envelopeScene">
+            <div class="envelope-container">
+                <div class="envelope">
+                    <div class="envelope-cover"></div>
+                    <div class="envelope-inner">
+                        <div class="envelope-flap"></div>
+                    </div>
+                </div>
+                <div class="envelope-glow"></div>
+            </div>
+            <p class="envelope-text">✨ A Special Surprise Is Waiting For You... ✨</p>
+        </div>
+
+        <!-- Scene 3: Letter -->
+        <div class="scene letter-scene" id="letterScene">
+            <div class="letter-container">
+                <div class="letter">
+                    <div class="letter-content">
+                        <h1 class="letter-heading">🎉 HAPPY BIRTHDAY SONU 🎉</h1>
+                        <div class="letter-body">
+                            <p><span class="letter-dear">Dear Sonu,</span></p>
+                            <p>Today is your special day.</p>
+                            <p>May God bless you with happiness, success, good health, peace, and endless smiles.</p>
+                            <p>Keep shining forever.</p>
+                            <p><span class="letter-signature">Happy Birthday My Friend ❤️</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scene 4: Party Poppers -->
+        <div class="scene poppers-scene" id="poppersScene">
+            <div class="popper left-popper"></div>
+            <div class="popper right-popper"></div>
+            <h2 class="celebration-text">🎉 HAPPY BIRTHDAY SONU 🎉</h2>
+        </div>
+
+        <!-- Scene 5: Birthday Card -->
+        <div class="scene card-scene" id="cardScene">
+            <div class="birthday-card">
+                <div class="card-shine"></div>
+                <div class="card-content">
+                    <h2 class="card-heading">HAPPY BIRTHDAY SONU ❤️</h2>
+                    <p class="card-message">Wishing you Joy • Success • Peace • Health • Love and a Beautiful Future.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scene 6: Birthday Cake -->
+        <div class="scene cake-scene" id="cakeScene">
+            <div class="cake-container">
+                <div class="cake">
+                    <div class="cake-layer bottom-layer"></div>
+                    <div class="cake-layer middle-layer"></div>
+                    <div class="cake-layer top-layer"></div>
+                    <div class="candles">
+                        <div class="candle candle-1">
+                            <div class="candle-stick"></div>
+                            <div class="flame flame-1"></div>
+                        </div>
+                        <div class="candle candle-2">
+                            <div class="candle-stick"></div>
+                            <div class="flame flame-2"></div>
+                        </div>
+                        <div class="candle candle-3">
+                            <div class="candle-stick"></div>
+                            <div class="flame flame-3"></div>
+                        </div>
+                        <div class="candle candle-4">
+                            <div class="candle-stick"></div>
+                            <div class="flame flame-4"></div>
+                        </div>
+                        <div class="candle candle-5">
+                            <div class="candle-stick"></div>
+                            <div class="flame flame-5"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cake-shadow"></div>
+            </div>
+        </div>
+
+        <!-- Scene 7: Smoke (after candle blow) -->
+        <div class="scene smoke-scene" id="smokeScene">
+            <div class="smoke smoke-1"></div>
+            <div class="smoke smoke-2"></div>
+            <div class="smoke smoke-3"></div>
+            <canvas id="smokeCanvas" class="full-screen-canvas"></canvas>
+        </div>
+
+        <!-- Scene 8: Cake Cutting -->
+        <div class="scene cutting-scene" id="cuttingScene">
+            <div class="knife-container">
+                <div class="knife"></div>
+            </div>
+        </div>
+
+        <!-- Scene 9: Final Celebration -->
+        <div class="scene final-scene" id="finalScene">
+            <div class="fireworks-container">
+                <canvas id="fireworksCanvas" class="full-screen-canvas"></canvas>
+            </div>
+            <div class="final-message">
+                <h1 class="final-heading">🎂 HAPPY BIRTHDAY DOST 🎂</h1>
+                <h2 class="final-name">❤️ SONU ❤️</h2>
+                <p class="final-text">May all your dreams come true.<br>Stay happy forever.<br>You are an amazing friend.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Music Button (fallback) -->
+    <button id="musicBtn" class="music-button">▶ Play Birthday Music</button>
+    <audio id="birthdayAudio" src="music.mp3"></audio>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
